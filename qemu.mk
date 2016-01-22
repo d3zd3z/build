@@ -215,7 +215,7 @@ run-only:
 		-nographic \
 		-serial tcp:localhost:54320 -serial tcp:localhost:54321 \
 		-s -S -machine virt -cpu cortex-a15 \
-		-m 1057 \
+		-m 1024 \
 		-bios $(ROOT)/out/bios-qemu/bios.bin $(QEMU_EXTRA_ARGS)
 
 
