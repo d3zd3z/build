@@ -207,10 +207,10 @@ run: all
 
 .PHONY: run-only
 run-only:
-	$(call run-help)
-	$(call launch-terminal,54320,"Normal World")
-	$(call launch-terminal,54321,"Secure World")
-	$(call wait-for-ports,54320,54321)
+	#$(call run-help)
+	#$(call launch-terminal,54320,"Normal World")
+	#$(call launch-terminal,54321,"Secure World")
+	#$(call wait-for-ports,54320,54321)
 	$(QEMU_PATH)/arm-softmmu/qemu-system-arm \
 		-nographic \
 		-serial tcp:localhost:54320 -serial tcp:localhost:54321 \
